@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  button, 
+  a, 
+  [role="button"],
+  input[type="submit"] {
+    cursor: pointer !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #F5EFE8;
+    color: #2A1F1A;
+  }
+
+  /* Elegant Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #F5EFE8;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #c3b2a2;
+    border-radius: 9999px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b09e8e;
+  }
+}
